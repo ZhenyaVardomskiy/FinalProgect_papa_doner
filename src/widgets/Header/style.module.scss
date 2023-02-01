@@ -1,0 +1,113 @@
+@font-face {
+    font-family: "AbrilFatface";
+    src: url("../../fonts/AbrilFatface/AbrilFatface-Regular.ttf");
+}
+
+@font-face {
+    font-family: "OpenSans";
+    src: url("../../fonts/OpenSans/OpenSans-Light.ttf");
+}
+
+*{
+    margin: 0 auto;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    margin: 0 ;
+    align-items: center;
+}
+
+.upNav{
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+}
+
+.upNav>img{
+    width: 196px;
+    margin-right: 60px;
+}
+
+.phone{
+    display: flex;
+    margin-right: 70px;
+    gap: 10px;
+}
+
+.phoneIcon{
+    font-size: 20px;
+}
+
+.phoneText{
+    font-family: "AbrilFatface";
+    font-size: 25px;
+    line-height: 18px;
+}
+
+.socialMedia{
+    display: flex;
+    gap: 30px;
+    font-size: 16px;
+    margin-right: 350px;
+}
+
+.deliveryPin{
+    display: flex;
+    gap: 14px;
+    margin-right: 40px;
+
+    font-family: "OpenSans";
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.logIn{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+
+    font-family: "OpenSans";
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.downNav{
+    display: flex;
+    padding: 15px 0;
+    gap: 410px;
+    align-items: center;
+}
+
+.mainMenu{
+    display: flex;
+    gap: 16px;
+}
+
+.menuItem a{
+    color: black;
+    text-decoration: none;
+    font-family: "OpenSans";
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.cartBtn{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    color: #fff;
+    border: 0;
+    background-color: red;
+    padding: 10px 16px;
+    border-radius: 20px;
+    font-family: "OpenSans";
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.cartIcon{
+    font-size: 22px;
+}
