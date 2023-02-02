@@ -8,15 +8,14 @@
     src: url("../../fonts/OpenSans/OpenSans-Light.ttf");
 }
 
-*{
-    margin: 0 auto;
-}
-
 .wrapper{
     display: flex;
     flex-direction: column;
-    margin: 0 ;
+    width: 100%;
+    // max-width: 1224px;
+    // margin: 0 auto;
     align-items: center;
+    border-bottom: 1px solid #eee;
 }
 
 .upNav{
@@ -76,7 +75,7 @@
 .downNav{
     display: flex;
     padding: 15px 0;
-    gap: 410px;
+    gap: 400px;
     align-items: center;
 }
 

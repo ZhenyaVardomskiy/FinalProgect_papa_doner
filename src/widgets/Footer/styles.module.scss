@@ -1,0 +1,113 @@
+@font-face {
+    font-family: "AbrilFatface";
+    src: url("../../fonts/AbrilFatface/AbrilFatface-Regular.ttf");
+}
+
+@font-face {
+    font-family: "OpenSans";
+    src: url("../../fonts/OpenSans/OpenSans-Light.ttf");
+}
+
+@font-face {
+    font-family: "OpenSansB";
+    src: url("../../fonts/OpenSans/OpenSans-Bold.ttf");
+}
+
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    width: 100%;
+    max-width: 1224px;
+    margin: 0 auto;
+    padding: 25px 0;
+
+    border-top: 1px solid #eee;
+}
+
+.socialMedia{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.socialIcon{
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item p{
+    margin: 0;
+    margin-bottom: 8px;
+
+    font-family: "OpenSans";
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.item a{
+    font-family: "OpenSans";
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+}
+
+.item ul{
+    margin: 0;
+    padding: 0;
+
+} 
+
+.listWrapper li{
+    list-style-type: none;
+    justify-content: left;
+    margin-bottom: 8px;
+
+    font-family: "OpenSans";
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.callCenter{
+    display: flex;
+    gap: 11px;
+    align-items: center;
+    margin-bottom: 12px;
+    
+    font-size: 20px;
+}
+
+.callCenter span{
+    font-family: "OpenSansB";
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.callCenterTime{
+    margin-bottom: 25px;
+
+    font-family: "OpenSans";
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.mobileStore{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
+}
+
+.mobileStore span{
+    display: flex;
+    gap: 25px;
+}
+
+.card{
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    padding: 16px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}

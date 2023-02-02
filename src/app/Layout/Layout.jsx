@@ -1,10 +1,10 @@
-import { Header } from "widgets"
-
+import { Footer, Header } from 'widgets'
 
 function Layout() {
      return (
           <>
                <Header />
+               <Footer />
           </>
      )
 }
