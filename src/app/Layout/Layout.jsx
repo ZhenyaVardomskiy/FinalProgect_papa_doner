@@ -1,9 +1,10 @@
 import { Footer, Header } from 'widgets'
 
-function Layout() {
+function Layout({ children }) {
      return (
           <>
                <Header />
+               <div>{children}</div>
                <Footer />
           </>
      )

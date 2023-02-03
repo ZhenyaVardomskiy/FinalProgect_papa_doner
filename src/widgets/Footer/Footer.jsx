@@ -15,6 +15,7 @@ function Footer() {
           <footer className={styles.footer}>
                <div className={styles.wrapper}>
                     <div className={styles.socialMedia}>
+                         
                          <img src={img} alt="img" />
                          <div className={styles.socialIcon}>
                               <IoLogoInstagram />
