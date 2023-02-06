@@ -1,22 +1,21 @@
 import { FaTiktok } from 'react-icons/fa'
 import { IoLogoInstagram, IoLogoYoutube } from 'react-icons/io'
-
-import styles from './styles.module.scss'
+import { HiOutlinePhone } from 'react-icons/hi'
 
 import img from '../../assets/images/Footer/logo-footer.svg'
 import img2 from '../../assets/images/Footer/google-play.png'
 import img3 from '../../assets/images/Footer/app-store.png'
 import img4 from '../../assets/images/Footer/mastter-card.png'
 import img5 from '../../assets/images/Footer/visa.png'
-import { HiOutlinePhone } from 'react-icons/hi'
+
+import styles from './styles.module.scss'
 
 function Footer() {
      return (
           <footer className={styles.footer}>
                <div className={styles.wrapper}>
                     <div className={styles.socialMedia}>
-                         
-                         <img src={img} alt="img" />
+                              <img src={img} alt="img" />
                          <div className={styles.socialIcon}>
                               <IoLogoInstagram />
                               <IoLogoYoutube />

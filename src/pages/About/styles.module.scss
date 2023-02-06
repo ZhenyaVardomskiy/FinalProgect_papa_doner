@@ -1,0 +1,147 @@
+@font-face {
+    font-family: "AbrilFatface";
+    src: url("../../fonts/AbrilFatface/AbrilFatface-Regular.ttf");
+}
+
+@font-face {
+    font-family: "OpenSans";
+    src: url("../../fonts/OpenSans/OpenSans-Light.ttf");
+}
+
+.wrapper{
+    margin: 0 auto;
+    max-width: 808px;
+
+    font-family: "OpenSans";
+}
+
+.path{
+    margin-top: 20px;
+    display: flex;
+}
+
+.path a{
+    text-decoration: none;
+    color: black;
+}
+
+.path span{
+    margin: 0 8px;
+}
+
+.aboutCompany{
+    margin: 0 auto;
+    max-width: 808px;
+}
+
+.aboutCompany h1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+
+    font-family: "AbrilFatface";
+    font-size: 40px;
+}
+
+.aboutCompany p{
+    margin-bottom: 15px;
+    line-height: 20px;
+}
+
+.mediaBlock{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 55px 0;
+}
+
+.mediaBlockReverse{
+    flex-direction: row-reverse;
+}
+
+.mediaBlock img{
+    border-radius: 20px;
+    height: 288px;
+}
+
+.mediaBlock ul, h4, p{
+    margin: 0;
+    
+}
+
+.mediaBlock h4{
+    margin-bottom: 10px;
+}
+
+.mediaBlock li::marker{
+    color: red;
+}
+
+.videoBlock h1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+
+    font-family: "AbrilFatface";
+    font-size: 40px;
+}
+
+.videos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
+
+.slide{
+    width: 48%;
+    margin-bottom: 40px;
+}
+
+.slide video{
+    width: 100%;
+}
+
+.franchise{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+    background-color: black;
+    color: #fff;
+}
+
+.franchise h2{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    font-family: "AbrilFatface";
+    font-size: 40px;
+}
+
+.franchise p{
+    margin: 20px 0;
+}
+
+.feedback{
+    display: flex;
+    gap: 15px;
+}
+
+.feedback input{
+    padding: 6px 15px 6px 0;
+    width: 100%;
+    border: none;
+    background: transparent;
+    outline: none;
+    color: #fff;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.feedback button{
+    color: #fff;
+    padding: 10px;
+    font-size: 16px;
+    background-color: red;
+    border-radius: 20px;
+}

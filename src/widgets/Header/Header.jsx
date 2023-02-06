@@ -1,19 +1,27 @@
 import { IoLogoInstagram, IoLogoYoutube } from 'react-icons/io'
 import { FaTiktok } from 'react-icons/fa'
 import { FiMapPin } from 'react-icons/fi'
-import { HiOutlinePhone, HiOutlineShoppingCart} from 'react-icons/hi'
+import { HiOutlinePhone, HiOutlineShoppingCart } from 'react-icons/hi'
 import { GoTriangleDown } from 'react-icons/go'
 import { CiUser } from 'react-icons/ci'
 
 import styles from './style.module.scss'
 
 import logo from '../../assets/images/Header/logo.svg'
+import { Link } from 'react-router-dom'
+import { ROUTES } from 'shared/const'
+
+{
+     /* <Link to={ROUTES.HOME}></Link> */
+}
 
 function Header() {
      return (
           <header className={styles.wrapper}>
                <div className={styles.upNav}>
-                    <img src={logo} alt="logo" />
+                    <Link to={ROUTES.HOME}>
+                         <img src={logo} alt="logo" className={styles.logo} />
+                    </Link>
                     <div className={styles.phone}>
                          <HiOutlinePhone className={styles.phoneIcon} />
                          <div className={styles.phoneText}>7927</div>
@@ -55,18 +63,18 @@ function Header() {
                               <a href="">Новости</a>
                          </div>
                          <div className={styles.menuItem}>
-                              <a href="">О компании</a>
+                              <Link to={ROUTES.ABOUT}>О компании</Link>
                          </div>
                          <div className={styles.menuItem}>
-                              <a href="">Контакты</a>
+                              <Link to={ROUTES.CONTACTS}>Контакты</Link>
                          </div>
                          <div className={styles.menuItem}>
                               <a href="">Франшиза</a>
                          </div>
                     </div>
                     <button className={styles.cartBtn}>
-                         <HiOutlineShoppingCart className={styles.cartIcon}/>
-                         Корзина: 0.00  руб.
+                         <HiOutlineShoppingCart className={styles.cartIcon} />
+                         Корзина: 0.00 руб.
                     </button>
                </div>
           </header>
