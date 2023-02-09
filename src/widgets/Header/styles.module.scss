@@ -12,8 +12,6 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    // max-width: 1224px;
-    // margin: 0 auto;
     align-items: center;
     border-bottom: 1px solid #eee;
 }
@@ -24,6 +22,10 @@
     padding: 8px 0;
 }
 
+.upNav div{
+    padding: 5px;
+}
+
 .logo{
     width: 196px;
     margin-right: 60px;
@@ -31,6 +33,7 @@
 
 .phone{
     display: flex;
+    align-items: center;
     margin-right: 70px;
     gap: 10px;
 }
@@ -49,23 +52,13 @@
     display: flex;
     gap: 30px;
     font-size: 16px;
-    margin-right: 350px;
+    margin-right: 120px;
 }
 
 .deliveryPin{
     display: flex;
     gap: 14px;
     margin-right: 40px;
-
-    font-family: "OpenSans";
-    font-size: 14px;
-    font-weight: 600;
-}
-
-.logIn{
-    display: flex;
-    gap: 12px;
-    align-items: center;
 
     font-family: "OpenSans";
     font-size: 14px;

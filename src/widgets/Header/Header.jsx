@@ -5,17 +5,16 @@ import { HiOutlinePhone, HiOutlineShoppingCart } from 'react-icons/hi'
 import { GoTriangleDown } from 'react-icons/go'
 import { CiUser } from 'react-icons/ci'
 
-import styles from './style.module.scss'
+import styles from './styles.module.scss'
 
 import logo from '../../assets/images/Header/logo.svg'
 import { Link } from 'react-router-dom'
 import { ROUTES } from 'shared/const'
-
-{
-     /* <Link to={ROUTES.HOME}></Link> */
-}
+import { SignInModal, SignUpModal } from './ui'
+import { useState } from 'react'
 
 function Header() {
+
      return (
           <header className={styles.wrapper}>
                <div className={styles.upNav}>
@@ -40,10 +39,8 @@ function Header() {
                               <GoTriangleDown />
                          </span>
                     </div>
-                    <div className={styles.logIn}>
-                         <CiUser />
-                         Войти
-                    </div>
+                    <SignInModal />
+                    <SignUpModal />
                </div>
                <div className={styles.downNav}>
                     <div className={styles.mainMenu}>

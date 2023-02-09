@@ -1,0 +1,27 @@
+.enter{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    cursor: pointer;
+    font-family: "OpenSans";
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.modalBtn{
+    color: #fff;
+    border: 0;
+    background-color: red;
+    padding: 10px 16px;
+    border-radius: 20px;
+    font-family: "OpenSans";
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.modalBtn:hover{
+    cursor: pointer;
+    background-color: rgba(255, 0, 0, 0.719);
+    color: black;
+}
