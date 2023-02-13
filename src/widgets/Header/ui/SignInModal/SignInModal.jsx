@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Formik } from 'formik'
 import { Box, Modal } from '@mui/material'
+import { GrClose } from 'react-icons/gr'
 import { FaUser } from 'react-icons/fa'
 import * as Yup from 'yup'
 
@@ -48,7 +49,7 @@ function SignInModal() {
                               bgcolor: 'background.paper',
                               boxShadow: 24,
                               borderRadius: 6,
-                              p: 4,
+                              p: 3,
                          }}
                     >
                          <Formik
@@ -64,14 +65,23 @@ function SignInModal() {
                                         style={{
                                              display: 'flex',
                                              flexDirection: 'column',
-                                             gap: '12px',
+                                             gap: '5px',
                                         }}
                                    >
+                                        <div className={styles.closeBtnWrapper}>
+                                             <GrClose
+                                                  onClick={handleClose}
+                                                  className={styles.closeBtn}
+                                             />
+                                        </div>
                                         <div className={styles.title}>
                                              Войти в аккаунт Papa Doner
                                         </div>
                                         <FormInput name="email" />
-                                        <FormInput name="password" label="Пароль"/>
+                                        <FormInput
+                                             name="password"
+                                             label="Пароль"
+                                        />
                                         <button
                                              type="submit"
                                              className={styles.modalBtn}

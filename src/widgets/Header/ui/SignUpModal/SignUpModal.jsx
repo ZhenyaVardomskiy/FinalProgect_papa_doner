@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Formik } from 'formik'
 import { Box, Modal } from '@mui/material'
+import { GrClose } from 'react-icons/gr'
 import { FaUserPlus } from 'react-icons/fa'
 import * as Yup from 'yup'
 
@@ -60,7 +61,7 @@ function SignUpModal() {
                               bgcolor: 'background.paper',
                               boxShadow: 24,
                               borderRadius: 6,
-                              p: 4,
+                              p: 3,
                          }}
                     >
                          <Formik
@@ -82,9 +83,15 @@ function SignUpModal() {
                                         style={{
                                              display: 'flex',
                                              flexDirection: 'column',
-                                             gap: '12px',
+                                             gap: '5px',
                                         }}
                                    >
+                                        <div className={styles.closeBtnWrapper}>
+                                             <GrClose
+                                                  onClick={handleClose}
+                                                  className={styles.closeBtn}
+                                             />
+                                        </div>
                                         <div className={styles.title}>
                                              Зарегистрировать аккаунт Papa Doner
                                         </div>

@@ -14,11 +14,20 @@
 }
 
 .title{
-    margin-bottom: 10px;
-
     font-family: "OpenSans";
     font-size: 22px;
     font-weight: 600;
+}
+
+.closeBtn{
+    font-size: 20px;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+.closeBtnWrapper{
+    display: flex;
+    justify-content: right;
 }
 
 .modalBtn{
