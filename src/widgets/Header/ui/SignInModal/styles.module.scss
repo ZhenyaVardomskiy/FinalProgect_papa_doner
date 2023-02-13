@@ -9,15 +9,25 @@
     font-weight: 600;
 }
 
+.title{
+    margin-bottom: 10px;
+
+    font-family: "OpenSans";
+    font-size: 22px;
+    font-weight: 600;
+}
+
 .modalBtn{
     color: #fff;
     border: 0;
     background-color: red;
     padding: 10px 16px;
     border-radius: 20px;
+    margin-top: 10px;
+
     font-family: "OpenSans";
-    font-size: 16px;
-    font-weight: 400;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 .modalBtn:hover{

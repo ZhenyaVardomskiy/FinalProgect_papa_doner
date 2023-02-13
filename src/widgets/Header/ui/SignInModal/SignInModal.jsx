@@ -1,17 +1,18 @@
 import { useState } from 'react'
 import { Formik } from 'formik'
-import { Box, Modal, TextField } from '@mui/material'
+import { Box, Modal } from '@mui/material'
 import { FaUser } from 'react-icons/fa'
 import * as Yup from 'yup'
 
 import styles from './styles.module.scss'
+import { FormInput } from 'shared/const/ui/FormInput'
 
 const SignInSchema = Yup.object().shape({
-     email: Yup.string().email('Invalid email').required('Required'),
+     email: Yup.string().email('Неверный адрес').required('Обязательное поле'),
      password: Yup.string()
-          .min(2, 'Too Short!')
-          .max(50, 'Too Long!')
-          .required('Required'),
+          .min(2, 'Слишком короткий!')
+          .max(50, 'Слишком длинный!')
+          .required('Обязательное поле'),
 })
 
 function SignInModal() {
@@ -57,14 +58,7 @@ function SignInModal() {
                                    console.log(values)
                               }}
                          >
-                              {({
-                                   values,
-                                   errors,
-                                   touched,
-                                   handleChange,
-                                   handleBlur,
-                                   handleSubmit,
-                              }) => (
+                              {({ handleSubmit }) => (
                                    <form
                                         onSubmit={handleSubmit}
                                         style={{
@@ -73,35 +67,16 @@ function SignInModal() {
                                              gap: '12px',
                                         }}
                                    >
-                                        <TextField
-                                             type="email"
-                                             name="email"
-                                             onChange={handleChange}
-                                             onBlur={handleBlur}
-                                             value={values.email}
-                                             label="email"
-                                             variant="standard"
-                                        />
-                                        {errors.email &&
-                                             touched.email &&
-                                             errors.email}
-                                        <TextField
-                                             type="password"
-                                             name="password"
-                                             onChange={handleChange}
-                                             onBlur={handleBlur}
-                                             value={values.password}
-                                             label="password"
-                                             variant="standard"
-                                        />
-                                        {errors.password &&
-                                             touched.password &&
-                                             errors.password}
+                                        <div className={styles.title}>
+                                             Войти в аккаунт Papa Doner
+                                        </div>
+                                        <FormInput name="email" />
+                                        <FormInput name="password" label="Пароль"/>
                                         <button
                                              type="submit"
                                              className={styles.modalBtn}
                                         >
-                                             Submit
+                                             Войти
                                         </button>
                                    </form>
                               )}

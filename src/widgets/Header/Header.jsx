@@ -3,7 +3,6 @@ import { FaTiktok } from 'react-icons/fa'
 import { FiMapPin } from 'react-icons/fi'
 import { HiOutlinePhone, HiOutlineShoppingCart } from 'react-icons/hi'
 import { GoTriangleDown } from 'react-icons/go'
-import { CiUser } from 'react-icons/ci'
 
 import styles from './styles.module.scss'
 
@@ -11,7 +10,6 @@ import logo from '../../assets/images/Header/logo.svg'
 import { Link } from 'react-router-dom'
 import { ROUTES } from 'shared/const'
 import { SignInModal, SignUpModal } from './ui'
-import { useState } from 'react'
 
 function Header() {
 

@@ -12,3 +12,30 @@
 .registerIcon{
     font-size: 17px;
 }
+
+.title{
+    margin-bottom: 10px;
+
+    font-family: "OpenSans";
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.modalBtn{
+    color: #fff;
+    border: 0;
+    background-color: red;
+    padding: 10px 16px;
+    border-radius: 20px;
+    margin-top: 10px;
+
+    font-family: "OpenSans";
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.modalBtn:hover{
+    cursor: pointer;
+    background-color: rgba(255, 0, 0, 0.719);
+    color: black;
+}
