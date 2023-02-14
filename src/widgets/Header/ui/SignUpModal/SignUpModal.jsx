@@ -7,6 +7,8 @@ import * as Yup from 'yup'
 
 import styles from './styles.module.scss'
 import { FormInput } from 'shared/const/ui/FormInput'
+import { UserModel } from 'models'
+import { observer } from 'mobx-react-lite'
 
 const SignUpSchema = Yup.object().shape({
      name: Yup.string()
@@ -74,7 +76,7 @@ function SignUpModal() {
                               }}
                               validationSchema={SignUpSchema}
                               onSubmit={(values) => {
-                                   console.log(values)
+                                   UserModel.signUp(values)
                               }}
                          >
                               {({ handleSubmit }) => (
@@ -124,4 +126,4 @@ function SignUpModal() {
      )
 }
 
-export default SignUpModal
+export default observer(SignUpModal)
