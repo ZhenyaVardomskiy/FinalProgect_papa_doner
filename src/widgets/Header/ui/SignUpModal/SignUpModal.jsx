@@ -9,25 +9,20 @@ import styles from './styles.module.scss'
 import { FormInput } from 'shared/const/ui/FormInput'
 import { UserModel } from 'models'
 import { observer } from 'mobx-react-lite'
+import {
+     emailValidation,
+     passwordValidation,
+     nameValidation,
+     lastNameValidation,
+     confirmPasswordValidation,
+} from 'shared/helpers'
 
 const SignUpSchema = Yup.object().shape({
-     name: Yup.string()
-          .min(2, 'Слишком короткий!')
-          .max(50, 'Слишком длинный!')
-          .required('Обязательное поле'),
-     lastName: Yup.string()
-          .min(2, 'Слишком короткий!')
-          .max(50, 'Слишком длинный!')
-          .required('Обязательное поле'),
-     email: Yup.string().email('Неверный адрес').required('Обязательное поле'),
-     password: Yup.string()
-          .min(2, 'Слишком короткий!')
-          .max(50, 'Слишком длинный!')
-          .required('Обязательное поле'),
-     confirmPassword: Yup.string().oneOf(
-          [Yup.ref('password')],
-          'Пароли не совпадают'
-     ),
+     name: nameValidation(),
+     lastName: lastNameValidation(),
+     email: emailValidation(),
+     password: passwordValidation(),
+     confirmPassword: confirmPasswordValidation(),
 })
 
 function SignUpModal() {

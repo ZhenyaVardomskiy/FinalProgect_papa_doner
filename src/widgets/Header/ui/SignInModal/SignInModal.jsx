@@ -7,13 +7,12 @@ import * as Yup from 'yup'
 
 import styles from './styles.module.scss'
 import { FormInput } from 'shared/const/ui/FormInput'
+import { UserModel } from 'models'
+import { emailValidation, passwordValidation } from 'shared/helpers'
 
 const SignInSchema = Yup.object().shape({
-     email: Yup.string().email('Неверный адрес').required('Обязательное поле'),
-     password: Yup.string()
-          .min(2, 'Слишком короткий!')
-          .max(50, 'Слишком длинный!')
-          .required('Обязательное поле'),
+     email: emailValidation(),
+     password: passwordValidation()
 })
 
 function SignInModal() {
@@ -56,7 +55,7 @@ function SignInModal() {
                               initialValues={{ email: '', password: '' }}
                               validationSchema={SignInSchema}
                               onSubmit={(values) => {
-                                   console.log(values)
+                                   UserModel.signIn(values)
                               }}
                          >
                               {({ handleSubmit }) => (

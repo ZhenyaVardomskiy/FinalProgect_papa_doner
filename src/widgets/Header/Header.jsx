@@ -1,18 +1,19 @@
 import { IoLogoInstagram, IoLogoYoutube } from 'react-icons/io'
-import { FaTiktok } from 'react-icons/fa'
+import { FaTiktok, FaUserCircle } from 'react-icons/fa'
 import { FiMapPin } from 'react-icons/fi'
 import { HiOutlinePhone, HiOutlineShoppingCart } from 'react-icons/hi'
 import { GoTriangleDown } from 'react-icons/go'
 
-import styles from './styles.module.scss'
-
-import logo from '../../assets/images/Header/logo.svg'
 import { Link } from 'react-router-dom'
 import { ROUTES } from 'shared/const'
+import { UserModel } from 'models'
 import { SignInModal, SignUpModal } from './ui'
 
-function Header() {
+import logo from '../../assets/images/Header/logo.svg'
+import styles from './styles.module.scss'
+import { observer } from 'mobx-react-lite'
 
+function Header() {
      return (
           <header className={styles.wrapper}>
                <div className={styles.upNav}>
@@ -37,8 +38,19 @@ function Header() {
                               <GoTriangleDown />
                          </span>
                     </div>
-                    <SignInModal />
-                    <SignUpModal />
+                    {UserModel.isLoggedIn() ? (
+                              <Link to={ROUTES.USER} className={styles.user}>
+                                   <FaUserCircle />
+                                   <div>{UserModel.email}</div>
+                              </Link>
+                              
+                         
+                    ) : (
+                         <>
+                              <SignInModal />
+                              <SignUpModal />
+                         </>
+                    )}
                </div>
                <div className={styles.downNav}>
                     <div className={styles.mainMenu}>
@@ -76,4 +88,4 @@ function Header() {
      )
 }
 
-export default Header
+export default observer(Header)

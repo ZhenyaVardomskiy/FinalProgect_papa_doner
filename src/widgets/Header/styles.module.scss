@@ -65,6 +65,19 @@
     font-weight: 600;
 }
 
+.user{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    font-family: "OpenSans";
+    font-size: 18px;
+    font-weight: 600;
+}
+
 .downNav{
     display: flex;
     padding: 15px 0;
