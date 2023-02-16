@@ -1,0 +1,153 @@
+.doner{
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #fff;
+    max-width: 288px;
+}
+
+.mainImg1{
+    position: relative;
+}
+
+.mainImg1 img{
+    width: 288px;
+}
+
+.titleImg{
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    bottom: 16px;
+}
+
+.titleImg img{
+    width: 100%;
+    max-width: 190px;
+}
+
+.infoPriceWrap{
+
+    display: flex;
+    position: relative;
+    left: 55px;
+    top: 15px;
+
+    font-family: "AbrilFatface";
+    letter-spacing: 0.8px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.infoPriceSize{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 10px;
+    background-color: #f33030;
+    border-top-left-radius: 15px;
+}
+
+.infoPrice{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 10px;
+    background-color: #ff7700;
+    border-bottom-right-radius: 15px;
+}
+
+.info{
+    padding: 8px 16px;
+}
+
+.title{
+    margin-bottom: 16px;
+    
+    font-family: "OpenSans";
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+}
+
+.text{
+    margin-bottom: 16px;
+    min-height: 100px;
+    
+    font-family: "OpenSans";
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+}
+
+.size{
+    display: flex;
+    justify-content: center;
+    padding: 2px 0;
+
+    border-radius: 20px;
+    background-color: black;
+    color: #fff;
+}
+
+.sizeBorder{
+    padding: 2px;
+
+    border: 1px solid #d0d0d0;
+    border-radius: 20px;
+    font-family: "OpenSans";
+    font-size: 13px;
+    line-height: 16px;
+}
+
+.sizeWrapper{
+    margin-bottom: 24px;
+}
+
+.total{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price{
+    position: relative;
+    font-size: 30px;
+    font-weight: 900;
+    display: flex;
+    align-items: flex-start;
+    line-height: 36px;
+}
+
+.price sup{
+    font-size: 12px;
+    line-height: 17px;
+    margin-left: 2px;
+}
+
+.price span{
+    position: absolute;
+    font-size: 14px;
+    font-weight: 400;
+    left: 25px;
+    top: 3px;
+}
+
+.btn{
+    padding: 10px 16px;
+
+    background: #f33030;
+    border: none;
+    border-radius: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.0125em;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: #f17172;
+}

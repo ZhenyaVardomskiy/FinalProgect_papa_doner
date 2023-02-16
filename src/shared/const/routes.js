@@ -3,4 +3,5 @@ export const ROUTES = {
      USER: 'user',
      ABOUT: '/about',
      CONTACTS: '/contacts',
+     MENU: '/menu'
 }

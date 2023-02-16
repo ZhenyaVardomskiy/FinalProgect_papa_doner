@@ -39,12 +39,10 @@ function Header() {
                          </span>
                     </div>
                     {UserModel.isLoggedIn() ? (
-                              <Link to={ROUTES.USER} className={styles.user}>
-                                   <FaUserCircle />
-                                   <div>{UserModel.email}</div>
-                              </Link>
-                              
-                         
+                         <Link to={ROUTES.USER} className={styles.user}>
+                              <FaUserCircle />
+                              <div>{UserModel.email}</div>
+                         </Link>
                     ) : (
                          <>
                               <SignInModal />
@@ -55,7 +53,7 @@ function Header() {
                <div className={styles.downNav}>
                     <div className={styles.mainMenu}>
                          <div className={styles.menuItem}>
-                              <a href="">Меню</a>
+                              <Link to={ROUTES.MENU}>Меню</Link>
                          </div>
                          <div className={styles.menuItem}>
                               <a href="">Приложение</a>
