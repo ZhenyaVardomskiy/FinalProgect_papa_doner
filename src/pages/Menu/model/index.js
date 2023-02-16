@@ -1,0 +1,1 @@
+export { default as DonerModal } from './doner.model'
