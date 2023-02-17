@@ -1,24 +1,29 @@
 import { DonerItem } from './ui'
 
 import styles from './styles.module.scss'
-import { DonerModal } from './model'
 import { useEffect } from 'react'
+import { observer } from 'mobx-react-lite'
+import { ProductsModel } from './model'
 
 function Menu() {
      useEffect(() => {
-          DonerModal.fetch()
+          ProductsModel.fetch()
      }, [])
 
      return (
           <div className={styles.wrapper}>
                <h1>Донеры</h1>
                <div className={styles.doners}>
-                    {DonerModal.doner.map((item) => {
-                         return <DonerItem item={item} />
-                    })}
+                    {ProductsModel.loading ? (
+                         <>Loading....</>
+                    ) : (
+                         ProductsModel.doners.map((item) => {
+                              return <DonerItem item={item} key={item.title} />
+                         })
+                    )}
                </div>
           </div>
      )
 }
 
-export default Menu
+export default observer(Menu)

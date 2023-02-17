@@ -1,1 +1,1 @@
-export { default as DonerModal } from './doner.model'
+export { default as ProductsModel } from './products.model'
