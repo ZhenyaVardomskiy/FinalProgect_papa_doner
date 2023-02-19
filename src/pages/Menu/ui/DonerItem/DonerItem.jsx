@@ -1,3 +1,5 @@
+import { observer } from 'mobx-react-lite'
+import { UserModel } from 'models'
 import styles from './styles.module.scss'
 
 function DonerItem({ item }) {
@@ -31,11 +33,16 @@ function DonerItem({ item }) {
                               <sup>{item.pennies}</sup>
                               <span>{item.currency}</span>
                          </div>
-                         <button className={styles.btn}>В корзину</button>
+                         <button
+                              className={styles.btn}
+                              onClick={() => UserModel.addToOrder(item)}
+                         >
+                              В корзину
+                         </button>
                     </div>
                </div>
           </div>
      )
 }
 
-export default DonerItem
+export default observer(DonerItem)

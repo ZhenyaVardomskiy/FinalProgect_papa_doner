@@ -77,10 +77,11 @@ function Header() {
                               <a href="">Франшиза</a>
                          </div>
                     </div>
-                    <button className={styles.cartBtn}>
+
+                    <Link to={ROUTES.SHOPPING_CART} className={styles.cartBtn}>
                          <HiOutlineShoppingCart className={styles.cartIcon} />
                          Корзина: 0.00 руб.
-                    </button>
+                    </Link>
                </div>
           </header>
      )
