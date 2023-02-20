@@ -27,8 +27,14 @@ class UserModel {
           if (item.title == item.title) {
                this.shoppingCart = [...this.shoppingCart, item]
                console.log(JSON.parse(JSON.stringify(this.shoppingCart)))
-               console.log(this.shoppingCart)
           }
+     }
+
+     removeItemOrder(title){
+          this.shoppingCart = this.shoppingCart.filter((item) => item.title !== title)
+          console.log('delete', title)
+          console.log(JSON.parse(JSON.stringify(this.shoppingCart)))
+          console.log(JSON.parse(JSON.stringify(this.shoppingCart.length)))
      }
 
      signIn({ email, password }) {
@@ -77,6 +83,26 @@ class UserModel {
 
           localStorage.removeItem(STORAGE_USER)
      }
+
+
+
+//      {if (JSON.parse(JSON.stringify(UserModel.shoppingCart.length)) != 0) {
+//           {JSON.parse(JSON.stringify(UserModel.shoppingCart)).map(
+//               (item) => (
+//                    <CartProductItem
+//                         key={item.title}
+//                         title={item.title}
+//                         price={item.price}
+//                         size={item.size}
+//                         img={item.img}
+//                         img2={item.img2}
+//                         description={item.description}
+//                    />
+//               )
+//          )}
+//     } else {
+//          <div>пусто</div>
+//     }}
 }
 
 export default new UserModel()
