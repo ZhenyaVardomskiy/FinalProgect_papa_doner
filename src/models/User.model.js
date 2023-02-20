@@ -1,5 +1,4 @@
 import { makeAutoObservable } from 'mobx'
-import { ShoppingCart } from 'pages'
 
 const STORAGE_USER = 'user'
 
@@ -24,15 +23,8 @@ class UserModel {
           this.init()
      }
 
-     // shoppingCartItem(){
-     //      (JSON.parse(JSON.stringify(UserModel.shoppingCart))).map((item)=>{
-     //           <ShoppingCart item={item}/>
-     //      })
-     // }
-
      addToOrder(item) {
           if (item.title == item.title) {
-               // this.shoppingCart.push(item)
                this.shoppingCart = [...this.shoppingCart, item]
                console.log(JSON.parse(JSON.stringify(this.shoppingCart)))
                console.log(this.shoppingCart)

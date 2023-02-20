@@ -25,7 +25,7 @@ class ProductsModel {
                     {
                          title: 'Донер Мехико',
                          size: '500 г.',
-                         price: '9.50 руб',
+                         price: '9.50',
                          cash: '9.',
                          pennies: '50',
                          currency: 'руб',
@@ -37,7 +37,7 @@ class ProductsModel {
                     {
                          title: 'Донер Вегетариан',
                          size: '450 г.',
-                         price: '6.90 руб',
+                         price: '6.90',
                          cash: '6.',
                          pennies: '90',
                          currency: 'руб',
@@ -49,7 +49,7 @@ class ProductsModel {
                     {
                          title: 'Донер Итальяно',
                          size: '500 г.',
-                         price: '9.50 руб',
+                         price: '9.50',
                          cash: '9.',
                          pennies: '50',
                          currency: 'руб',
@@ -61,7 +61,7 @@ class ProductsModel {
                     {
                          title: 'Донер Деревня',
                          size: '500 г.',
-                         price: '8.50 руб',
+                         price: '8.50',
                          cash: '8.',
                          pennies: '50',
                          currency: 'руб',

@@ -14,7 +14,7 @@ function DonerItem({ item }) {
                                    {item.size}
                               </div>
                               <div className={styles.infoPrice}>
-                                   {item.price}
+                                   {item.price} руб
                               </div>
                          </div>
                     </div>

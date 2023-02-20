@@ -1,25 +1,23 @@
 import { UserModel } from 'models'
 import { CartProductItem } from './ui/CartProductItem'
 
-function ShoppingCart() {
-     // function getItemInModel() {
-     //      JSON.parse(JSON.stringify(UserModel.shoppingCart)).map((item) => {
-     //           return item,
-     //           console.log(item)
-     //      })
-     // }
+import styles from './styles.module.scss'
 
+function ShoppingCart() {
      return (
-          <div>
-               КОРЗИНА
-               <div>
+          <div className={styles.wrapper}>
+               <h1>КОРЗИНА</h1>
+               <div className={styles.item}>
                     {JSON.parse(JSON.stringify(UserModel.shoppingCart)).map(
                          (item) => (
                               <CartProductItem
                                    key={item.title}
                                    title={item.title}
-                                   description={item.description}
                                    price={item.price}
+                                   size={item.size}
+                                   img={item.img}
+                                   img2={item.img2}
+                                   description={item.description}
                               />
                          )
                     )}
