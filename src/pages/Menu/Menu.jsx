@@ -1,11 +1,11 @@
 import { useEffect } from 'react'
 import { observer } from 'mobx-react-lite'
+import { UserModel } from 'models'
 
 import { ProductsModel } from './model'
 import { DonerItem } from './ui'
 
 import styles from './styles.module.scss'
-import { UserModel } from 'models'
 
 function Menu() {
      useEffect(() => {

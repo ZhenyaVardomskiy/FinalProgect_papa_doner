@@ -12,6 +12,7 @@ function CartProductItem({
      img,
      img2,
      count,
+     item,
 }) {
      return (
           <div className={styles.wrapper} key={id}>
@@ -32,14 +33,17 @@ function CartProductItem({
                          <div className={styles.count}>
                               <button
                                    className={styles.countBtn}
-                                   onClick={() =>
-                                        UserModel.removeItemOrder(title)
-                                   }
+                                   onClick={() => UserModel.downCount(item)}
                               >
                                    -
                               </button>
                               <div className={styles.countDisplay}>{count}</div>
-                              <button className={styles.countBtn}>+</button>
+                              <button
+                                   className={styles.countBtn}
+                                   onClick={() => UserModel.upCount(item)}
+                              >
+                                   +
+                              </button>
                          </div>
                     </div>
                </div>

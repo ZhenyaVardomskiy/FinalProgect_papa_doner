@@ -1,5 +1,4 @@
 import { observer } from 'mobx-react-lite'
-import { toJS } from 'mobx'
 import { UserModel } from 'models'
 
 import styles from './styles.module.scss'
@@ -8,9 +7,6 @@ function DonerItem({ item }) {
      const handleAddCart = (item) => {
           UserModel.addToOrder(item)
      }
-
-     // UserModel.addCount(item)
-     // console.log(toJS(item),'доб сч')
 
      return (
           <div className={styles.doner}>

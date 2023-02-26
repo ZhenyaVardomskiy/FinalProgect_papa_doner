@@ -28,10 +28,6 @@ class UserModel {
           this.init()
      }
 
-     countPlus(item) {
-          item = { ...(item.count = this.count + 1) } //криво но работает
-     }
-
      addToOrder(item) {
           const idData = item.id
           const idx = this.shoppingCart.findIndex((item) => item.id === idData)
@@ -40,7 +36,29 @@ class UserModel {
           } else {
                this.shoppingCart.push(item)
           }
-          console.log(toJS(this.shoppingCart))
+          console.log(toJS(this.shoppingCart),"add")
+     }
+
+     upCount(item) {
+          const idData = item.id
+          const idx = this.shoppingCart.findIndex((item) => item.id === idData)
+          if (idx !== -1 && this.shoppingCart[idx].count >= 1) {
+               this.shoppingCart[idx].count = this.shoppingCart[idx].count + 1
+          } else {
+               this.shoppingCart[idx].count = 1
+          }
+          console.log(toJS(this.shoppingCart),'+')
+     }
+
+     downCount(item) {
+          const idData = item.id
+          const idx = this.shoppingCart.findIndex((item) => item.id === idData)
+          if (idx !== -1 && this.shoppingCart[idx].count > 1) {
+               this.shoppingCart[idx].count = this.shoppingCart[idx].count - 1
+          } else {
+               this.shoppingCart[idx].count = 1
+          }
+          console.log(toJS(this.shoppingCart),'-')
      }
 
      removeItemOrder(title) {

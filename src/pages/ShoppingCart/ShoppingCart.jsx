@@ -7,6 +7,13 @@ import { CartProductItem } from './ui/CartProductItem'
 import styles from './styles.module.scss'
 
 function ShoppingCart() {
+     // const upCountC = (item) => {
+     //      UserModel.upCount(item)
+     // }
+     // const upCountC = ((item)=> {
+     //      UserModel.upCount(item)
+     // })
+
      return (
           <div className={styles.wrapper}>
                <h1>КОРЗИНА</h1>
@@ -16,6 +23,7 @@ function ShoppingCart() {
                     ) : (
                          toJS(UserModel.shoppingCart).map((item) => (
                               <CartProductItem
+                                   item={item}
                                    key={item.id}
                                    title={item.title}
                                    price={item.price}
