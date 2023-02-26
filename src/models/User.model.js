@@ -1,11 +1,14 @@
-import { makeAutoObservable } from 'mobx'
+import { makeAutoObservable, toJS } from 'mobx'
 
 const STORAGE_USER = 'user'
 
 class UserModel {
-     // console.log(JSON.parse(JSON.stringify(item))
+     // console.log(JSON.parse(JSON.stringify(item)) //заглянуть внутрь proxy
+     //console.log(toJS(this.shoppingCart)) //заглянуть внутрь proxy(лучший метод)
 
      shoppingCart = []
+
+     count = 0
 
      name = ''
 
@@ -17,24 +20,35 @@ class UserModel {
 
      confirmPassword = ''
 
+     // total = 0
+
      constructor() {
           makeAutoObservable(this)
 
           this.init()
      }
 
-     addToOrder(item) {
-          if (item.title == item.title) {
-               this.shoppingCart = [...this.shoppingCart, item]
-               console.log(JSON.parse(JSON.stringify(this.shoppingCart)))
-          }
+     countPlus(item) {
+          item = { ...(item.count = this.count + 1) } //криво но работает
      }
 
-     removeItemOrder(title){
-          this.shoppingCart = this.shoppingCart.filter((item) => item.title !== title)
+     addToOrder(item) {
+          const idData = item.id
+          const idx = this.shoppingCart.findIndex((item) => item.id === idData)
+          if (idx !== -1) {
+               this.shoppingCart[idx].count = this.shoppingCart[idx].count + 1
+          } else {
+               this.shoppingCart.push(item)
+          }
+          console.log(toJS(this.shoppingCart))
+     }
+
+     removeItemOrder(title) {
+          this.shoppingCart = this.shoppingCart.filter(
+               (item) => item.title !== title
+          )
           console.log('delete', title)
-          console.log(JSON.parse(JSON.stringify(this.shoppingCart)))
-          console.log(JSON.parse(JSON.stringify(this.shoppingCart.length)))
+          console.log(toJS(this.shoppingCart))
      }
 
      signIn({ email, password }) {
@@ -83,26 +97,6 @@ class UserModel {
 
           localStorage.removeItem(STORAGE_USER)
      }
-
-
-
-//      {if (JSON.parse(JSON.stringify(UserModel.shoppingCart.length)) != 0) {
-//           {JSON.parse(JSON.stringify(UserModel.shoppingCart)).map(
-//               (item) => (
-//                    <CartProductItem
-//                         key={item.title}
-//                         title={item.title}
-//                         price={item.price}
-//                         size={item.size}
-//                         img={item.img}
-//                         img2={item.img2}
-//                         description={item.description}
-//                    />
-//               )
-//          )}
-//     } else {
-//          <div>пусто</div>
-//     }}
 }
 
 export default new UserModel()

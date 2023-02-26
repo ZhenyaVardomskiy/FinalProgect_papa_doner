@@ -1,11 +1,20 @@
 import { observer } from 'mobx-react-lite'
 import { UserModel } from 'models'
+
 import styles from './styles.module.scss'
 
-function CartProductItem({ title, description, price, size, img, img2 }) {
-     
+function CartProductItem({
+     id,
+     title,
+     description,
+     price,
+     size,
+     img,
+     img2,
+     count,
+}) {
      return (
-          <div className={styles.wrapper}>
+          <div className={styles.wrapper} key={id}>
                <div className={styles.mainImg}>
                     <img src={img} alt="" />
                     <div className={styles.titleImg}>
@@ -21,8 +30,15 @@ function CartProductItem({ title, description, price, size, img, img2 }) {
                               <div className={styles.size}>{size}</div>
                          </div>
                          <div className={styles.count}>
-                              <button className={styles.countBtn} onClick={()=>UserModel.removeItemOrder(title)}>-</button>
-                              <div className={styles.countDisplay}>0</div>
+                              <button
+                                   className={styles.countBtn}
+                                   onClick={() =>
+                                        UserModel.removeItemOrder(title)
+                                   }
+                              >
+                                   -
+                              </button>
+                              <div className={styles.countDisplay}>{count}</div>
                               <button className={styles.countBtn}>+</button>
                          </div>
                     </div>

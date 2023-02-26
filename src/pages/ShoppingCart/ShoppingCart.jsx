@@ -1,8 +1,10 @@
 import { UserModel } from 'models'
+import { toJS } from 'mobx'
+import { observer } from 'mobx-react-lite'
+
 import { CartProductItem } from './ui/CartProductItem'
 
 import styles from './styles.module.scss'
-import { observer } from 'mobx-react-lite'
 
 function ShoppingCart() {
      return (
@@ -12,19 +14,18 @@ function ShoppingCart() {
                     {!UserModel.shoppingCart.length ? (
                          <>Корзина пуста</>
                     ) : (
-                         JSON.parse(JSON.stringify(UserModel.shoppingCart)).map(
-                              (item) => (
-                                   <CartProductItem
-                                        key={item.title}
-                                        title={item.title}
-                                        price={item.price}
-                                        size={item.size}
-                                        img={item.img}
-                                        img2={item.img2}
-                                        description={item.description}
-                                   />
-                              )
-                         )
+                         toJS(UserModel.shoppingCart).map((item) => (
+                              <CartProductItem
+                                   key={item.id}
+                                   title={item.title}
+                                   price={item.price}
+                                   size={item.size}
+                                   img={item.img}
+                                   img2={item.img2}
+                                   count={item.count}
+                                   description={item.description}
+                              />
+                         ))
                     )}
                </div>
           </div>

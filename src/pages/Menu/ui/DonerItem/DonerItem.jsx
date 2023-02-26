@@ -1,8 +1,17 @@
 import { observer } from 'mobx-react-lite'
+import { toJS } from 'mobx'
 import { UserModel } from 'models'
+
 import styles from './styles.module.scss'
 
 function DonerItem({ item }) {
+     const handleAddCart = (item) => {
+          UserModel.addToOrder(item)
+     }
+
+     // UserModel.addCount(item)
+     // console.log(toJS(item),'доб сч')
+
      return (
           <div className={styles.doner}>
                <div className={styles.mainImg1}>
@@ -35,7 +44,18 @@ function DonerItem({ item }) {
                          </div>
                          <button
                               className={styles.btn}
-                              onClick={() => UserModel.addToOrder(item)}
+                              onClick={() =>
+                                   handleAddCart({
+                                        id: item.id,
+                                        title: item.title,
+                                        description: item.description,
+                                        price: item.price,
+                                        size: item.size,
+                                        img: item.img,
+                                        img2: item.img2,
+                                        count: item.count,
+                                   })
+                              }
                          >
                               В корзину
                          </button>
