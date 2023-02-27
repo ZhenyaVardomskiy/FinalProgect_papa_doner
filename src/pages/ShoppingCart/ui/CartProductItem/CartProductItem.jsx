@@ -1,5 +1,6 @@
 import { observer } from 'mobx-react-lite'
 import { UserModel } from 'models'
+import { FaTrash } from 'react-icons/fa'
 
 import styles from './styles.module.scss'
 
@@ -17,17 +18,21 @@ function CartProductItem({
      return (
           <div className={styles.wrapper} key={id}>
                <div className={styles.mainImg}>
-                    <img src={img} alt="" />
+                    <img src={img} alt=""/>
                     <div className={styles.titleImg}>
                          <img src={img2} alt="" />
                     </div>
                </div>
                <div className={styles.info}>
-                    <div className={styles.title}>{title}</div>
-                    <div className={styles.text}>{description}</div>
+                    <div className={styles.m}>
+                         <div className={styles.title}>{title}</div>
+                         <div className={styles.text}>{description}</div>
+                    </div>
                     <div className={styles.modification}>
                          <div className={styles.aboutBox}>
-                              <div className={styles.price}>{price} руб</div>
+                              <div className={styles.price}>
+                                   {parseInt(price * count * 100) / 100} руб
+                              </div>
                               <div className={styles.size}>{size}</div>
                          </div>
                          <div className={styles.count}>
@@ -44,6 +49,14 @@ function CartProductItem({
                               >
                                    +
                               </button>
+                              <div className={styles.trashBtnWrap}>
+                                   <FaTrash
+                                        className={styles.trashBtn}
+                                        onClick={() =>
+                                             UserModel.removeItemOrder(title)
+                                        }
+                                   />
+                              </div>
                          </div>
                     </div>
                </div>

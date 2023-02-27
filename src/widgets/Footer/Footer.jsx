@@ -1,8 +1,10 @@
+import { Link } from 'react-router-dom'
+import { ROUTES } from 'shared/const'
 import { FaTiktok } from 'react-icons/fa'
 import { IoLogoInstagram, IoLogoYoutube } from 'react-icons/io'
 import { HiOutlinePhone } from 'react-icons/hi'
 
-import img from '../../assets/images/Footer/logo-footer.svg'
+import img from '../../assets/images/Footer/logo.svg'
 import img2 from '../../assets/images/Footer/google-play.png'
 import img3 from '../../assets/images/Footer/app-store.png'
 import img4 from '../../assets/images/Footer/mastter-card.png'
@@ -15,7 +17,9 @@ function Footer() {
           <footer className={styles.footer}>
                <div className={styles.wrapper}>
                     <div className={styles.socialMedia}>
+                         <Link to={ROUTES.HOME}>
                               <img src={img} alt="img" />
+                         </Link>
                          <div className={styles.socialIcon}>
                               <IoLogoInstagram />
                               <IoLogoYoutube />

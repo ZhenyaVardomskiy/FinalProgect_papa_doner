@@ -15,7 +15,6 @@ function Menu() {
      return (
           <div className={styles.wrapper}>
                <h1>Донеры</h1>
-               {UserModel.count}
                <div className={styles.doners}>
                     {ProductsModel.loading ? (
                          <>Loading....</>

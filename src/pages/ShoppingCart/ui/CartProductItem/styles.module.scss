@@ -1,115 +1,143 @@
-.wrapper{
-    display: flex;
-    padding: 5px;
+.wrapper {
+     display: flex;
+     justify-content: space-around;
+     padding: 5px;
 
-    border: 1px grey solid;
-    border-radius: 20px;
-    max-width: 450px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+     border: 1px grey solid;
+     border-radius: 20px;
+     max-width: 850px;
+     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.mainImg{
-    position: relative;
-    bottom: 1px;
-    left: 6px;
+.mainImg {
+     max-width: 300px;
+     position: relative;
+     bottom: 1px;
+     left: 6px;
 }
 
-.mainImg img{
-    width: 230px;
+.mainImg > img {
+     width: 60%;
+     // max-width: 268px;
+     // max-height: 167px;
 }
 
-.titleImg{
-    position: absolute;
-    top: 3px;
-    right: 35px;
+.titleImg {
+     position: absolute;
+     top: 3px;
+     right: 95px;
 }
 
-.titleImg img{
-    width: 100%;
-    max-width: 140px;
+.titleImg img {
+     width: 80%;
+     max-width: 140px;
 }
 
-.info{
-    padding-top: 5px;
+.info {
+     // display: flex;
+     padding: 5px;
 }
 
-.modification{
-    display: flex;
-    gap: 50px;
+.modification {
+     display: flex;
+     gap: 50px;
 }
 
-.count{
-    display: flex;
+.count {
+     display: flex;
 }
 
-.title{
-    margin-bottom: 18px;
-    
-    font-family: "OpenSansB";
-    font-size: 18px;
-    font-weight: 800;
-    line-height: 15px;
-    letter-spacing: 0.3px;
+.title {
+     margin-bottom: 18px;
+
+     font-family: 'OpenSansB';
+     font-size: 20px;
+     font-weight: 800;
+     line-height: 15px;
+     letter-spacing: 0.3px;
 }
 
-.text{
-    margin-bottom: 18px;
-    
-    font-family: "OpenSans";
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 16px;
-    letter-spacing: 0.4px;
+.text {
+     margin-bottom: 18px;
+
+     font-family: 'OpenSans';
+     font-size: 14px;
+     font-weight: 600;
+     line-height: 16px;
+     letter-spacing: 0.4px;
 }
 
-.aboutBox{
-    
+.aboutBox {
+     width: 100px;
 }
 
-.price{
-    margin-bottom: 6px;
-    
-    font-family: "OpenSansB";
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 16px;
-    letter-spacing: 0.4px;
+.price {
+     margin-bottom: 6px;
+
+     font-family: 'OpenSansB';
+     font-size: 18px;
+     font-weight: 600;
+     line-height: 16px;
+     letter-spacing: 0.4px;
 }
 
-.size{
-    font-family: "OpenSans";
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 16px;
-    letter-spacing: 0.4px;
+.size {
+     font-family: 'OpenSans';
+     font-size: 14px;
+     font-weight: 600;
+     line-height: 16px;
+     letter-spacing: 0.4px;
 }
 
-.count{
-    display: flex;
-    align-items: center;
-    // gap: 8px;
+.count {
+     display: flex;
+     align-items: center;
 }
 
-.countBtn{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 6px;
-    font-size: 18px;
+.countBtn {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding: 4px;
+     font-size: 16px;
 
-    background-color: red;
-    color: #fff;
-    border-radius: 5px;
-    border: none;
+     background-color: red;
+     color: #fff;
+     border-radius: 5px;
+     border: none;
 }
 
-.countDisplay{
-    padding: 7px;
+.countBtn:hover {
+     cursor: pointer;
+     background-color: rgba(255, 0, 0, 0.549);
+     color: rgb(255, 255, 255);
+}
 
-    font-family: "OpenSans";
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 16px;
-    letter-spacing: 0.4px;
-    // border: grey 0.5px solid; 
+.countDisplay {
+     display: flex;
+     justify-content: center;
+     padding: 12px;
+     width: 20px;
+
+     font-family: 'OpenSans';
+     font-size: 20px;
+     font-weight: 600;
+     line-height: 16px;
+     letter-spacing: 0.4px;
+}
+
+.trashBtnWrap {
+     margin-left: 10px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+.trashBtn {
+     font-size: 20px;
+}
+
+.trashBtn:hover {
+     cursor: pointer;
+     color: rgba(0, 0, 0, 0.372);
 }
