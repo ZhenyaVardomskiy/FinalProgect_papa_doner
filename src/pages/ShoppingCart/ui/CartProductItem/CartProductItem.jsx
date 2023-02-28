@@ -1,6 +1,7 @@
 import { observer } from 'mobx-react-lite'
 import { UserModel } from 'models'
-import { FaTrash } from 'react-icons/fa'
+import { BsTrash } from 'react-icons/bs'
+import { HiMinus, HiPlus } from 'react-icons/hi'
 
 import styles from './styles.module.scss'
 
@@ -37,20 +38,21 @@ function CartProductItem({
                          </div>
                          <div className={styles.count}>
                               <button
-                                   className={styles.countBtn}
+                                   className={`${styles.countBtn} ${styles.btnMinus}`}
                                    onClick={() => UserModel.downCount(item)}
                               >
-                                   -
+                                   <HiMinus />
                               </button>
                               <div className={styles.countDisplay}>{count}</div>
                               <button
-                                   className={styles.countBtn}
+                                   
+                                   className={`${styles.countBtn} ${styles.btnPlus}`}
                                    onClick={() => UserModel.upCount(item)}
                               >
-                                   +
+                                   <HiPlus />
                               </button>
                               <div className={styles.trashBtnWrap}>
-                                   <FaTrash
+                                   <BsTrash
                                         className={styles.trashBtn}
                                         onClick={() =>
                                              UserModel.removeItemOrder(title)

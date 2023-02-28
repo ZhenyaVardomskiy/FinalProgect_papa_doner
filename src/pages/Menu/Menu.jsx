@@ -14,7 +14,9 @@ function Menu() {
 
      return (
           <div className={styles.wrapper}>
-               <h1>Донеры</h1>
+               <div className={styles.titleWrapper}>
+                    <div className={styles.title}>ДОНЕРЫ</div>
+               </div>
                <div className={styles.doners}>
                     {ProductsModel.loading ? (
                          <>Loading....</>
