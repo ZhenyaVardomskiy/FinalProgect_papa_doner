@@ -7,8 +7,8 @@ function Home() {
      return (
           <div>
                Home
-               <div>Меня зовут{UserModel.name}</div>
-               <div>Меня зовут{UserModel.email}</div>
+               {/* <div>Меня зовут{UserModel.name}</div>
+               <div>Меня зовут{UserModel.email}</div> */}
                <Menu/>
           </div>
      )

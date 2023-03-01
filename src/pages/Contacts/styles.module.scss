@@ -1,0 +1,153 @@
+.wrapper {
+     margin: 0 auto;
+     padding: 20px 0;
+     max-width: 1160px;
+
+     font-family: 'OpenSans';
+}
+
+.path {
+     display: flex;
+}
+
+.path a {
+     text-decoration: none;
+     color: black;
+}
+
+.path span {
+     margin: 0 8px;
+}
+
+.contacts {
+     margin: 0 auto;
+     max-width: 1160px;
+}
+
+.contacts h1 {
+     display: flex;
+     justify-content: center;
+     margin-bottom: 40px;
+
+     font-family: 'Caveat';
+     font-size: 50px;
+}
+
+.contactsCategory {
+     display: flex;
+     justify-content: space-between;
+     gap: 20px;
+}
+
+.contactsCategory h4 {
+     font-family: 'Caveat';
+     font-size: 26px;
+}
+
+.contactsBlock {
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+}
+
+.contactsBlock p,
+a {
+     font-weight: 600;
+     color: black;
+}
+
+.socials {
+     display: flex;
+     gap: 20px;
+}
+
+.socials p,
+span {
+     display: flex;
+     align-items: center;
+     gap: 6px;
+}
+
+.addressListWrapper {
+     margin-bottom: 50px;
+}
+
+.addressList {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     gap: 20px;
+     align-items: center;
+}
+
+.support {
+     background-image: url(../../assets/images/Contacts/question-bg.jpg);
+     background-position: center;
+     background-repeat: no-repeat;
+     padding: 54px 0;
+}
+
+.support h3 {
+     display: flex;
+     justify-content: center;
+     margin: 0 0;
+     margin-bottom: 40px;
+
+     color: #fff;
+     font-family: 'Caveat';
+     font-size: 50px;
+}
+
+.content {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 60px;
+}
+
+.questionForm {
+     display: flex;
+     flex-direction: column;
+     gap: 40px;
+     max-width: 288px;
+}
+
+.questionInput {
+     outline: none;
+     background: transparent;
+     color: #fff;
+     border: none;
+     border-bottom: 1px solid #e2e2e2;
+     padding: 6px 15px 6px 0;
+     width: 100%;
+     border-radius: 0;
+
+     font-size: 17px;
+}
+
+.questionBtn {
+     display: flex;
+     align-items: center;
+     gap: 5px;
+
+     color: #fff;
+     text-decoration: none;
+     border: 0;
+     background-color: red;
+     box-shadow: 0px 5px 20px rgba(255, 0, 0, 0.5);
+     padding: 10px 16px;
+     border-radius: 20px;
+     font-family: 'OpenSans';
+     font-size: 17px;
+     font-weight: 600;
+}
+
+.questionBtn:hover {
+     cursor: pointer;
+     background-color: rgba(255, 0, 0, 0.719);
+     color: rgb(255, 255, 255);
+}
+
+.content img {
+     width: 22%;
+}

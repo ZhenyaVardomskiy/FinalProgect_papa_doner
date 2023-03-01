@@ -1,125 +1,125 @@
 @font-face {
-    font-family: "AbrilFatface";
-    src: url("../../fonts/AbrilFatface/AbrilFatface-Regular.ttf");
+     font-family: 'AbrilFatface';
+     src: url('../../fonts/AbrilFatface/AbrilFatface-Regular.ttf');
 }
 
 @font-face {
-    font-family: "OpenSans";
-    src: url("../../fonts/OpenSans/OpenSans-Light.ttf");
+     font-family: 'OpenSans';
+     src: url('../../fonts/OpenSans/OpenSans-Light.ttf');
 }
 
-.wrapper{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-    border-bottom: 1px solid #eee;
-    background-color: #fff;
+.wrapper {
+     display: flex;
+     flex-direction: column;
+     width: 100%;
+     align-items: center;
+     border-bottom: 1px solid #eee;
+     background-color: #fff;
 }
 
-.upNav{
-    display: flex;
-    align-items: center;
-    padding: 8px 0;
+.upNav {
+     display: flex;
+     align-items: center;
+     padding: 8px 0;
 }
 
-.upNav div{
-    padding: 5px;
+.upNav div {
+     padding: 5px;
 }
 
-.logo{
-    width: 196px;
-    margin-right: 60px;
+.logo {
+     width: 196px;
+     margin-right: 60px;
 }
 
-.phone{
-    display: flex;
-    align-items: center;
-    margin-right: 70px;
-    gap: 10px;
+.phone {
+     display: flex;
+     align-items: center;
+     margin-right: 70px;
+     gap: 10px;
 }
 
-.phoneIcon{
-    font-size: 20px;
+.phoneIcon {
+     font-size: 20px;
 }
 
-.phoneText{
-    font-family: "AbrilFatface";
-    font-size: 25px;
-    line-height: 18px;
+.phoneText {
+     font-family: 'AbrilFatface';
+     font-size: 25px;
+     line-height: 18px;
 }
 
-.socialMedia{
-    display: flex;
-    gap: 30px;
-    font-size: 16px;
-    margin-right: 120px;
+.socialMedia {
+     display: flex;
+     gap: 30px;
+     font-size: 16px;
+     margin-right: 120px;
 }
 
-.deliveryPin{
-    display: flex;
-    gap: 14px;
-    margin-right: 40px;
+.deliveryPin {
+     display: flex;
+     gap: 14px;
+     margin-right: 40px;
 
-    font-family: "OpenSans";
-    font-size: 14px;
-    font-weight: 600;
+     font-family: 'OpenSans';
+     font-size: 14px;
+     font-weight: 600;
 }
 
-.user{
-    display: flex;
-    gap: 5px;
-    align-items: center;
+.user {
+     display: flex;
+     gap: 5px;
+     align-items: center;
 
-    font-size: 20px;
-    color: black;
-    text-decoration: none;
-    font-family: "OpenSans";
-    font-size: 18px;
-    font-weight: 600;
+     font-size: 20px;
+     color: black;
+     text-decoration: none;
+     font-family: 'OpenSans';
+     font-size: 18px;
+     font-weight: 600;
 }
 
-.downNav{
-    display: flex;
-    padding: 15px 0;
-    gap: 400px;
-    align-items: center;
+.downNav {
+     display: flex;
+     padding: 15px 0;
+     gap: 400px;
+     align-items: center;
 }
 
-.mainMenu{
-    display: flex;
-    gap: 16px;
+.mainMenu {
+     display: flex;
+     gap: 26px;
 }
 
-.menuItem a{
-    color: black;
-    text-decoration: none;
-    font-family: "OpenSans";
-    font-size: 14px;
-    font-weight: 600;
+.menuItem a {
+     color: black;
+     text-decoration: none;
+     font-family: 'OpenSans';
+     font-size: 14px;
+     font-weight: 600;
 }
 
-.cartBtn{
-    display: flex;
-    align-items: center;
-    gap: 5px;
+.cartBtn {
+     display: flex;
+     align-items: center;
+     gap: 5px;
 
-    color: #fff;
-    text-decoration: none;
-    border: 0;
-    background-color: red;
-    padding: 10px 16px;
-    border-radius: 20px;
-    font-family: "OpenSans";
-    font-size: 16px;
-    font-weight: 600;
+     color: #fff;
+     text-decoration: none;
+     border: 0;
+     background-color: red;
+     padding: 10px 16px;
+     border-radius: 20px;
+     font-family: 'OpenSans';
+     font-size: 16px;
+     font-weight: 600;
 }
 
-.cartBtn:hover{
-    background-color: rgba(255, 0, 0, 0.719);
-    color: rgb(255, 255, 255);
+.cartBtn:hover {
+     background-color: rgba(255, 0, 0, 0.719);
+     color: rgb(255, 255, 255);
 }
 
-.cartIcon{
-    font-size: 22px;
+.cartIcon {
+     font-size: 22px;
 }

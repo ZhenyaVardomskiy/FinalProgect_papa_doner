@@ -65,9 +65,6 @@ function Header() {
                               <a href="">Отзывы</a>
                          </div>
                          <div className={styles.menuItem}>
-                              <a href="">Новости</a>
-                         </div>
-                         <div className={styles.menuItem}>
                               <Link to={ROUTES.ABOUT}>О компании</Link>
                          </div>
                          <div className={styles.menuItem}>
