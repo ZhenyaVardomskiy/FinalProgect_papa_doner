@@ -1,0 +1,1 @@
+export { default as MobileApplications } from './MobileApplications'

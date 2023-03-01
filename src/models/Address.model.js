@@ -83,7 +83,7 @@ class AddressModel {
                ]
 
                  this.loading = false
-          }, 1000)
+          }, 500)
      }
 }
 

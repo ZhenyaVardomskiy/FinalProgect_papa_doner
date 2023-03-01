@@ -5,12 +5,11 @@ import { IoLogoInstagram, IoLogoYoutube } from 'react-icons/io'
 import { HiOutlinePhone } from 'react-icons/hi'
 
 import img from '../../assets/images/Footer/logo.svg'
-import img2 from '../../assets/images/Footer/google-play.png'
-import img3 from '../../assets/images/Footer/app-store.png'
 import img4 from '../../assets/images/Footer/mastter-card.png'
 import img5 from '../../assets/images/Footer/visa.png'
 
 import styles from './styles.module.scss'
+import { MobileApplications } from 'shared/ui'
 
 function Footer() {
      return (
@@ -73,13 +72,8 @@ function Footer() {
                               Время работы колл-центра: <br /> пн-вс с 8:00 до
                               24:00
                          </div>
-                         <div className={styles.mobileStore}>
-                              <p>Для мобильных устройств</p>
-                              <span>
-                                   <img src={img2} alt="googlePlay" />
-                                   <img src={img3} alt="AppStore" />
-                              </span>
-                         </div>
+                         <p>Для мобильных устройств</p>
+                         <MobileApplications />
                          <div>
                               <p>Написать нам</p>
                               <a href="/">service.papadoner@yandex.ru</a>

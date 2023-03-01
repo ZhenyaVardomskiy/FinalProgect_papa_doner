@@ -77,7 +77,7 @@ function Header() {
 
                     <Link to={ROUTES.SHOPPING_CART} className={styles.cartBtn}>
                          <HiOutlineShoppingCart className={styles.cartIcon} />
-                         Корзина: {UserModel.shoppingCart.length}
+                         Корзина: {UserModel.total} руб.
                     </Link>
                </div>
           </header>

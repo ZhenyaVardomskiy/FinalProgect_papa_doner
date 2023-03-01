@@ -47,7 +47,7 @@ function ShoppingCart() {
                               />
                          ))}
                          <div className={styles.total}>
-                              Сумма заказа: 5.50 руб.
+                              Сумма заказа: {UserModel.total} руб.
                               <button className={styles.btnTotal}>К оформлению заказа</button>
                          </div>
                     </div>

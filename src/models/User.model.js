@@ -20,7 +20,7 @@ class UserModel {
 
      confirmPassword = ''
 
-     // total = 0
+     total = 0
 
      constructor() {
           makeAutoObservable(this)
@@ -37,6 +37,12 @@ class UserModel {
                this.shoppingCart.push(item)
           }
           console.log(toJS(this.shoppingCart), 'add')
+
+          this.total = this.shoppingCart.reduce(
+               (value, currenValue) =>
+                    value + currenValue.price * currenValue.count,
+               0
+          )
      }
 
      upCount(item) {
@@ -48,6 +54,12 @@ class UserModel {
                this.shoppingCart[idx].count = 1
           }
           console.log(toJS(this.shoppingCart), '+')
+
+          this.total = this.shoppingCart.reduce(
+               (value, currenValue) =>
+                    value + currenValue.price * currenValue.count,
+               0
+          )
      }
 
      downCount(item) {
@@ -59,6 +71,12 @@ class UserModel {
                this.shoppingCart[idx].count = 1
           }
           console.log(toJS(this.shoppingCart), '-')
+
+          this.total = this.shoppingCart.reduce(
+               (value, currenValue) =>
+                    value + currenValue.price * currenValue.count,
+               0
+          )
      }
 
      removeItemOrder(title) {
@@ -67,6 +85,11 @@ class UserModel {
           )
           console.log('delete', title)
           console.log(toJS(this.shoppingCart))
+          this.total = this.shoppingCart.reduce(
+               (value, currenValue) =>
+                    value + currenValue.price * currenValue.count,
+               0
+          )
      }
 
      signIn({ email, password }) {

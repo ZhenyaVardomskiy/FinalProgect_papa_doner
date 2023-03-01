@@ -3,6 +3,7 @@ import { ROUTES } from 'shared/const'
 
 import styles from './styles.module.scss'
 
+import { Videos } from 'shared/ui'
 import img1 from 'assets/images/About/about-1.png'
 import img2 from 'assets/images/About/about-2.png'
 import img3 from 'assets/images/About/about-3.png'
@@ -119,36 +120,7 @@ function About() {
                </div>
                <div className={styles.videoBlock}>
                     <h1>Наши рекламные ролики</h1>
-                    <div className={styles.videos}>
-                         <div className={styles.slide}>
-                              <video
-                                   src="https://franch.papadoner.by/video1.mp4"
-                                   preload="metadata"
-                                   controls="contrtols"
-                              ></video>
-                         </div>
-                         <div className={styles.slide}>
-                              <video
-                                   src="https://franch.papadoner.by/video2.mp4"
-                                   preload="metadata"
-                                   controls="contrtols"
-                              ></video>
-                         </div>
-                         <div className={styles.slide}>
-                              <video
-                                   src="https://franch.papadoner.by/video3.mp4"
-                                   preload="metadata"
-                                   controls="contrtols"
-                              ></video>
-                         </div>
-                         <div className={styles.slide}>
-                              <video
-                                   src="https://papadoner.by/resource/video/2021/08/ak.mp4"
-                                   preload="metadata"
-                                   controls="contrtols"
-                              ></video>
-                         </div>
-                    </div>
+                    <Videos />
                </div>
                <div className={styles.franchise}>
                     <div>

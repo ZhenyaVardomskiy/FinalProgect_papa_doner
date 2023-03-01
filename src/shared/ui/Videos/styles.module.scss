@@ -1,0 +1,14 @@
+.videos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
+
+.slide{
+    width: 48%;
+    margin-bottom: 40px;
+}
+
+.slide video{
+    width: 100%;
+}

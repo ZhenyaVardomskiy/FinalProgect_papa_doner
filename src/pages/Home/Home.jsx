@@ -1,15 +1,20 @@
-import { observer } from "mobx-react-lite"
-import { UserModel } from "models"
-import { Menu } from "pages/Menu"
+import { observer } from 'mobx-react-lite'
 
+import { Menu } from 'pages/Menu'
+import { Videos } from 'shared/ui'
+
+import styles from './styles.module.scss'
 
 function Home() {
      return (
-          <div>
-               Home
-               {/* <div>Меня зовут{UserModel.name}</div>
-               <div>Меня зовут{UserModel.email}</div> */}
-               <Menu/>
+          <div className={styles.wrapper}>
+               <Menu />
+               <div>
+                    <div className={styles.videosTitle}>ВИДЕО</div>
+                    <div className={styles.videoBlock}>
+                         <Videos />
+                    </div>
+               </div>
           </div>
      )
 }

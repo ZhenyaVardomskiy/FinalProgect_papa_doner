@@ -9,6 +9,7 @@ import { AddressModel } from 'models'
 
 import styles from './styles.module.scss'
 import img from 'assets/images/Footer/logo.svg'
+import { MobileApplications } from 'shared/ui'
 
 function Contacts() {
      useEffect(() => {
@@ -56,6 +57,7 @@ function Contacts() {
                          </div>
                          <div className={styles.contactsBlock}>
                               <h4>Приложение</h4>
+                              <MobileApplications />
                          </div>
                     </div>
                     <div className={styles.addressListWrapper}>
