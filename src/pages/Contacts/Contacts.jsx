@@ -1,21 +1,12 @@
 import { Link } from 'react-router-dom'
 import { ROUTES } from 'shared/const'
 import { IoLogoInstagram, IoLogoYoutube } from 'react-icons/io'
-import { useEffect } from 'react'
-import { observer } from 'mobx-react-lite'
-
-import { AddressItem } from './ui'
-import { AddressModel } from 'models'
 
 import styles from './styles.module.scss'
 import img from 'assets/images/Footer/logo.svg'
-import { MobileApplications } from 'shared/ui'
+import { AddressList, MobileApplications } from 'shared/ui'
 
 function Contacts() {
-     useEffect(() => {
-          AddressModel.fetch()
-     }, [])
-
      return (
           <div className={styles.wrapper}>
                <div className={styles.path}>
@@ -60,22 +51,9 @@ function Contacts() {
                               <MobileApplications />
                          </div>
                     </div>
-                    <div className={styles.addressListWrapper}>
+                    <div>
                          <h1>Адреса и график работы</h1>
-                         <div className={styles.addressList}>
-                              {AddressModel.loading ? (
-                                   <>Loading....</>
-                              ) : (
-                                   AddressModel.address.map((item) => {
-                                        return (
-                                             <AddressItem
-                                                  item={item}
-                                                  key={item.title}
-                                             />
-                                        )
-                                   })
-                              )}
-                         </div>
+                         <AddressList />
                     </div>
                     <div className={styles.support}>
                          <h3>Есть вопрос? Напишите нам!</h3>
@@ -108,4 +86,4 @@ function Contacts() {
      )
 }
 
-export default observer(Contacts)
+export default Contacts

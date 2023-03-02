@@ -28,24 +28,24 @@ function Footer() {
                     <div className={styles.item}>
                          <p>Меню</p>
                          <ul className={styles.listWrapper}>
-                              <li>Шаурма</li>
+                              <Link to={ROUTES.MENU}>Шаурма</Link>
+                              {/* <li>Шаурма</li>
                               <li>Стики</li>
                               <li>Боксы</li>
                               <li>Хантеры</li>
                               <li>Супы</li>
                               <li>Картошка</li>
-                              <li>Напитки</li>
+                              <li>Напитки</li> */}
                          </ul>
                     </div>
                     <div className={styles.item}>
                          <p>Papa Doner</p>
                          <ul className={styles.listWrapper}>
-                              <li>Главная</li>
+                              <Link to={ROUTES.HOME}>Главная</Link>
                               <li>Приложение</li>
-                              <li>О компании</li>
-                              <li>Адреса заведений</li>
-                              <li>Франшиза</li>
-                              <li>Контакты</li>
+                              <Link to={ROUTES.ABOUT}>О компании</Link>
+                              <a href="#address">Адреса заведений</a>
+                              <Link to={ROUTES.CONTACTS}>Контакты</Link>
                               <li>Отзывы</li>
                          </ul>
                     </div>

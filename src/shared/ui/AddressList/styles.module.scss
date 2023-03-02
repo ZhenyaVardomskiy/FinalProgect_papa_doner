@@ -1,0 +1,11 @@
+.addressListWrapper {
+    margin-bottom: 50px;
+}
+
+.addressList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}

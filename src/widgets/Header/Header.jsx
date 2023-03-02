@@ -59,7 +59,7 @@ function Header() {
                               <a href="">Приложение</a>
                          </div>
                          <div className={styles.menuItem}>
-                              <a href="">Заведения</a>
+                              <a href="#address">Заведения</a>
                          </div>
                          <div className={styles.menuItem}>
                               <a href="">Отзывы</a>
@@ -70,14 +70,16 @@ function Header() {
                          <div className={styles.menuItem}>
                               <Link to={ROUTES.CONTACTS}>Контакты</Link>
                          </div>
-                         <div className={styles.menuItem}>
-                              <a href="">Франшиза</a>
-                         </div>
                     </div>
 
                     <Link to={ROUTES.SHOPPING_CART} className={styles.cartBtn}>
-                         <HiOutlineShoppingCart className={styles.cartIcon} />
-                         Корзина: {UserModel.total} руб.
+                         <span>
+                              {' '}
+                              <HiOutlineShoppingCart
+                                   className={styles.cartIcon}
+                              />{' '}
+                              Корзина: {UserModel.total} руб.
+                         </span>
                     </Link>
                </div>
           </header>

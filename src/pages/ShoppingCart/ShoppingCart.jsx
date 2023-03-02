@@ -24,7 +24,7 @@ function ShoppingCart() {
                               Не паникуйте, просто откройте меню и добавьте то,
                               что вам нравится!
                          </div>
-                         <Link to={ROUTES.HOME} className={styles.btn}>
+                         <Link to={ROUTES.MENU} className={styles.btn}>
                               Вернуться в меню
                          </Link>
                     </div>

@@ -42,29 +42,39 @@
     justify-content: space-between;
 }
 
-.item p{
-    margin: 0;
-    margin-bottom: 8px;
-
-    font-family: "OpenSans";
-    font-size: 14px;
-    font-weight: 600;
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .item a{
+    text-decoration: none;
     font-family: "OpenSans";
-    font-size: 14px;
-    font-weight: 600;
+    font-size: 12px;
+    font-weight: 400;
     color: black;
 }
 
 .item ul{
     margin: 0;
     padding: 0;
+}
 
-} 
+.item p{
 
-.listWrapper li{
+    margin: 0;
+    margin-bottom: 8px;
+
+    font-family: "OpenSans";
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+}
+
+.listWrapper li, a{
+    display: flex;
+    flex-direction: column;
     list-style-type: none;
     justify-content: left;
     margin-bottom: 8px;
