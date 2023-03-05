@@ -1,7 +1,7 @@
 import { observer } from 'mobx-react-lite'
 
 import { Menu } from 'pages/Menu'
-import { AddressList, Videos } from 'shared/ui'
+import { AddressList, MobileApp, Videos } from 'shared/ui'
 
 import styles from './styles.module.scss'
 
@@ -18,6 +18,9 @@ function Home() {
                <div id='address'>
                     <div className={styles.title}>НАШИ ЗАВЕДЕНИЯ</div>
                     <AddressList />
+               </div>
+               <div id='mobile'>
+                    <MobileApp />
                </div>
           </div>
      )

@@ -40,8 +40,10 @@ function Header() {
                     </div>
                     {UserModel.isLoggedIn() ? (
                          <Link to={ROUTES.USER} className={styles.user}>
-                              <FaUserCircle />
-                              <div>{UserModel.email}</div>
+                              <span>
+                                   <FaUserCircle />
+                                   <div>{UserModel.email}</div>
+                              </span>
                          </Link>
                     ) : (
                          <>
@@ -56,7 +58,7 @@ function Header() {
                               <Link to={ROUTES.MENU}>Меню</Link>
                          </div>
                          <div className={styles.menuItem}>
-                              <a href="">Приложение</a>
+                              <a href="#mobile">Приложение</a>
                          </div>
                          <div className={styles.menuItem}>
                               <a href="#address">Заведения</a>
