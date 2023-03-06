@@ -7,6 +7,7 @@ import { MobileApplications } from '../MobileApplications'
 import styles from './styles.module.scss'
 
 function MobileApp() {
+
      return (
           <div className={styles.wrapper}>
                <h1 className={styles.title}>НАШЕ МОБИЛЬНОЕ ПРИЛОЖЕНИЕ</h1>

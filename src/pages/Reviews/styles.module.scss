@@ -1,0 +1,35 @@
+.wrapper{
+    margin: 0 auto;
+    padding: 20px 0;
+    max-width: 808px;
+
+    font-family: "OpenSans";
+}
+
+.wrapper h1{
+     width: fit-content;
+     border-bottom: 4px solid #f33030;
+     margin-bottom: 50px;
+     font-family: 'Caveat';
+     font-size: 52px;
+     font-weight: 800;
+}
+
+.path{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+
+.path a{
+    margin: 0;
+
+    font-size: 16px;
+    font-weight: 300;
+    text-decoration: none;
+    color: black;
+}
+
+.path span{
+    margin: 0 8px;
+}

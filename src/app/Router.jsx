@@ -1,7 +1,5 @@
 import { Route, Routes } from 'react-router-dom'
 
-import { ROUTES } from 'shared/const'
-
 import {
      About,
      Contacts,
@@ -10,7 +8,9 @@ import {
      ShoppingCart,
      User,
      Menu,
+     Reviews,
 } from 'pages'
+import { ROUTES } from 'shared/const'
 import { UserModel } from 'models'
 import { observer } from 'mobx-react-lite'
 
@@ -21,6 +21,7 @@ function Router() {
                <Route path={ROUTES.ABOUT} element={<About />} />
                <Route path={ROUTES.CONTACTS} element={<Contacts />} />
                <Route path={ROUTES.MENU} element={<Menu />} />
+               <Route path={ROUTES.REVIEWS} element={<Reviews />} />
                <Route path={ROUTES.SHOPPING_CART} element={<ShoppingCart />} />
                {UserModel.isLoggedIn() && (
                     <>

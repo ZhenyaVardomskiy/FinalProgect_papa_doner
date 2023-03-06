@@ -58,13 +58,13 @@ function Header() {
                               <Link to={ROUTES.MENU}>Меню</Link>
                          </div>
                          <div className={styles.menuItem}>
-                              <a href="#mobile">Приложение</a>
+                              <a href="/#mobile">Приложение</a>
                          </div>
                          <div className={styles.menuItem}>
-                              <a href="#address">Заведения</a>
+                              <a href="/#address">Заведения</a>
                          </div>
                          <div className={styles.menuItem}>
-                              <a href="">Отзывы</a>
+                              <Link to={ROUTES.REVIEWS}>Отзывы</Link>
                          </div>
                          <div className={styles.menuItem}>
                               <Link to={ROUTES.ABOUT}>О компании</Link>
