@@ -115,3 +115,38 @@
     border-top: 1px solid #eee;
     border-bottom: 1px solid #eee;
 }
+
+
+
+@media (max-width:480px) {
+
+    .wrapper{
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding: 0 10px;
+        gap: 10px;
+    }
+
+    .socialMedia a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .socialMedia img{
+        width: 60%;
+    }
+    
+    .socialMedia{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+    
+    .socialIcon{
+        justify-content: center;
+        gap: 20px;
+    }
+
+}

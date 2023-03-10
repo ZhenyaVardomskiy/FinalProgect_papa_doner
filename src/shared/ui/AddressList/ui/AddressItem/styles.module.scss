@@ -17,3 +17,24 @@
      height: 130px;
      padding: 16px 24px 28px;
 }
+
+@media (max-width: 480px) {
+
+     .itemWrapper {
+          display: flex;
+          max-width: 350px;
+
+          font-size: 13px;
+     }
+
+     .itemWrapper img{
+          width: 40%;
+          height: auto;
+     }
+     
+     .info {
+          gap: 8px;
+          padding: 8px 20px 20px;
+     }
+
+}

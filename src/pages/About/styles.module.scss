@@ -1,143 +1,189 @@
-.wrapper{
-    margin: 0 auto;
-    padding: 20px 0;
-    max-width: 808px;
+.wrapper {
+     margin: 0 auto;
+     padding: 20px 0;
+     max-width: 808px;
 
-    font-family: "OpenSans";
+     font-family: 'OpenSans';
 }
 
-.path{
-    display: flex;
-    align-items: center;
-    justify-self: center;
+.path {
+     display: flex;
+     align-items: center;
+     justify-self: center;
 }
 
-.path a{
-    margin: 0;
+.path a {
+     margin: 0;
 
-    font-size: 16px;
-    font-weight: 300;
-    text-decoration: none;
-    color: black;
+     font-size: 16px;
+     font-weight: 300;
+     text-decoration: none;
+     color: black;
 }
 
-.path span{
-    margin: 0 8px;
+.path span {
+     margin: 0 8px;
 }
 
-.aboutCompany{
-    margin: 0 auto;
-    max-width: 808px;
+.aboutCompany {
+     margin: 0 auto;
+     max-width: 808px;
 }
 
-.aboutCompany h1{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 40px;
+.aboutCompany h1 {
+     display: flex;
+     justify-content: center;
+     margin-bottom: 40px;
 
-    font-family: "Caveat";
-    font-size: 50px;
+     font-family: 'Caveat';
+     font-size: 50px;
 }
 
-.aboutCompany p{
-    margin-bottom: 15px;
-    line-height: 20px;
+.aboutCompany p {
+     margin-bottom: 15px;
+     line-height: 20px;
 }
 
-.mediaBlock{
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 10px;
-    margin: 55px 0;
+.mediaBlock {
+     display: flex;
+     align-items: flex-start;
+     justify-content: space-between;
+     gap: 10px;
+     margin: 55px 0;
 }
 
-.mediaBlockReverse{
-    flex-direction: row-reverse;
+.mediaBlockReverse {
+     flex-direction: row-reverse;
 }
 
-.mediaBlock img{
-    border-radius: 20px;
-    height: 288px;
+.mediaBlock img {
+     border-radius: 20px;
+     height: 288px;
 }
 
-.mediaBlock ul, h4, p{
-    margin: 0;
-    
+.mediaBlock ul,
+h4,
+p {
+     margin: 0;
 }
 
-.mediaBlock h4{
-    margin-bottom: 10px;
+.mediaBlock h4 {
+     margin-bottom: 10px;
 }
 
-.mediaBlock li::marker{
-    color: red;
+.mediaBlock li::marker {
+     color: red;
 }
 
-.videoBlock h1{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
+.videoBlock h1 {
+     display: flex;
+     justify-content: center;
+     margin-bottom: 50px;
 
-    font-family: "Caveat";
-    font-size: 46px;
+     font-family: 'Caveat';
+     font-size: 46px;
 }
 
-// .videos{
-//     display: flex;
-//     flex-wrap: wrap;
-//     justify-content: space-between; 
-// }
-
-// .slide{
-//     width: 48%;
-//     margin-bottom: 40px;
-// }
-
-// .slide video{
-//     width: 100%;
-// }
-
-.franchise{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 40px 0;
-    background-color: black;
-    color: #fff;
+.franchise {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding: 40px 0;
+     background-color: black;
+     color: #fff;
 }
 
-.franchise h2{
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    font-family: "Caveat";
-    font-size: 40px;
+.franchise h2 {
+     margin: 0;
+     display: flex;
+     justify-content: center;
+     font-family: 'Caveat';
+     font-size: 40px;
 }
 
-.franchise p{
-    margin: 20px 0;
+.franchise p {
+     margin: 20px 0;
 }
 
-.feedback{
-    display: flex;
-    gap: 15px;
+.feedback {
+     display: flex;
+     gap: 15px;
 }
 
-.feedback input{
-    padding: 6px 15px 6px 0;
-    width: 100%;
-    border: none;
-    background: transparent;
-    outline: none;
-    color: #fff;
-    border-bottom: 1px solid #e2e2e2;
+.feedback input {
+     padding: 6px 15px 6px 0;
+     width: 100%;
+     border: none;
+     background: transparent;
+     outline: none;
+     color: #fff;
+     border-bottom: 1px solid #e2e2e2;
 }
 
-.feedback button{
-    color: #fff;
-    padding: 10px;
-    font-size: 16px;
-    background-color: red;
-    border-radius: 20px;
+.feedback button {
+     color: #fff;
+     padding: 10px;
+     font-size: 16px;
+     background-color: red;
+     border-radius: 20px;
+}
+
+@media (max-width: 480px) {
+     .wrapper {
+          padding: 20px 10px;
+     }
+
+     .path {
+          font-size: 12px;
+     }
+
+     .path a {
+          font-size: 12px;
+     }
+
+     .path span {
+          margin: 0 6px;
+     }
+
+     .aboutCompany h1 {
+          margin-bottom: 30px;
+          font-size: 40px;
+     }
+
+     .aboutCompany p {
+          margin-bottom: 25px;
+     }
+
+     .mediaBlock {
+          flex-direction: column;
+          align-items: flex-start;
+          margin: 20px 0;
+     }
+
+     .mediaBlockReverse {
+          flex-direction: none;
+     }
+
+     .mediaBlock img {
+          height: 272px;
+     }
+
+     .videoBlock h1 {
+          margin-bottom: 30px;
+          font-size: 40px;
+     }
+
+     .franchise {
+          flex-direction: column;
+          padding: 20px 10px;
+     }
+
+     .feedback {
+          width: 90%;
+          flex-direction: column;
+     }
+
+     .feedback input {
+          padding: 6px 0;
+     }
 }

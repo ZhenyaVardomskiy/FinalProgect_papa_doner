@@ -9,3 +9,11 @@
     gap: 20px;
     align-items: center;
 }
+
+@media (max-width: 480px) {
+
+    .addressListWrapper {
+        margin-bottom: 30px;
+    }
+
+}

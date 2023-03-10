@@ -145,3 +145,54 @@ span {
 .content img {
      width: 22%;
 }
+
+@media (max-width: 480px) {
+     .wrapper {
+          padding: 20px 10px;
+     }
+
+     .path {
+          font-size: 12px;
+     }
+
+     .path a {
+          font-size: 12px;
+     }
+
+     .path span {
+          margin: 0 6px;
+     }
+
+     .contacts h1 {
+          margin-bottom: 10px;
+          font-size: 40px;
+     }
+
+     .contactsCategory {
+          flex-direction: column;
+          align-items: center;
+     }
+
+     .contactsBlock {
+          align-items: center;
+          gap: 6px;
+     }
+
+     .support {
+          padding: 20px 0;
+     }
+
+     .support h3 {
+          margin-bottom: 20px;
+          font-size: 28px;
+     }
+
+     .content {
+          flex-direction: column;
+          gap: 30px;
+     }
+
+     .content img {
+          width: 40%;
+     }
+}

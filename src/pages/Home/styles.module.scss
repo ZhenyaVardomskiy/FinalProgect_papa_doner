@@ -17,3 +17,21 @@
      font-size: 36px;
      font-weight: 800;
 }
+
+.videoBlock {
+     padding: 0;
+}
+
+@media (max-width: 480px) {
+     .wrapper {
+          gap: 20px;
+     }
+
+     .title {
+          margin-bottom: 40px;
+     }
+
+     .videoBlock {
+          padding: 0 10px;
+     }
+}

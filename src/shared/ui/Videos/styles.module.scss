@@ -1,14 +1,25 @@
-.videos{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; 
+.videos {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
 }
 
-.slide{
-    width: 48%;
-    margin-bottom: 40px;
+.slide {
+     width: 48%;
+     margin-bottom: 40px;
 }
 
-.slide video{
-    width: 100%;
+.slide video {
+     width: 100%;
+}
+
+@media (max-width: 480px) {
+     .videos {
+          flex-direction: column;
+     }
+
+     .slide {
+          width: 100%;
+          margin-bottom: 20px;
+     }
 }

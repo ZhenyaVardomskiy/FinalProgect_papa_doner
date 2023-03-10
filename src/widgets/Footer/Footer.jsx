@@ -29,13 +29,6 @@ function Footer() {
                          <p>Меню</p>
                          <ul className={styles.listWrapper}>
                               <Link to={ROUTES.MENU}>Шаурма</Link>
-                              {/* <li>Шаурма</li>
-                              <li>Стики</li>
-                              <li>Боксы</li>
-                              <li>Хантеры</li>
-                              <li>Супы</li>
-                              <li>Картошка</li>
-                              <li>Напитки</li> */}
                          </ul>
                     </div>
                     <div className={styles.item}>
