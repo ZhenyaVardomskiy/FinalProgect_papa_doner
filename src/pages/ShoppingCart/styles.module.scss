@@ -122,3 +122,46 @@
     background-color: rgba(255, 0, 0, 0.719);
     color: rgb(255, 255, 255);
 }
+
+@media (max-width:480px) {
+
+    .wrapper{
+        max-width: 480px;
+        padding: 20px 10px;
+    }
+    
+    .withoutItems{
+        gap: 10px;
+    }
+    
+    .withoutItems img{
+        width: 70%;
+    }
+    
+    .text{
+        font-size: 16px;
+    }
+    
+    .description{
+        font-size: 16px;
+    }
+    
+    .btn{
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+
+    .title{
+        font-size: 32px;
+    }
+    
+    .total{
+        font-size: 22px;
+    }
+    
+    .btnTotal{
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+
+}

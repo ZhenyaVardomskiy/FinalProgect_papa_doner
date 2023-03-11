@@ -120,10 +120,14 @@
 
 @media (max-width:480px) {
 
+    .footer{
+        padding: 0 10px;
+    }
+
     .wrapper{
         flex-wrap: wrap;
         flex-direction: column;
-        padding: 0 10px;
+        padding: 0;
         gap: 10px;
     }
 

@@ -35,11 +35,11 @@ function Footer() {
                          <p>Papa Doner</p>
                          <ul className={styles.listWrapper}>
                               <Link to={ROUTES.HOME}>Главная</Link>
-                              <li>Приложение</li>
+                              <a href="/#mobile">Приложение</a>
                               <Link to={ROUTES.ABOUT}>О компании</Link>
                               <a href="#address">Адреса заведений</a>
                               <Link to={ROUTES.CONTACTS}>Контакты</Link>
-                              <li>Отзывы</li>
+                              <Link to={ROUTES.REVIEWS}>Отзывы</Link>
                          </ul>
                     </div>
                     <div className={styles.item}>

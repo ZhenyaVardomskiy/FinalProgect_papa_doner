@@ -25,7 +25,7 @@ function CartProductItem({
                     </div>
                </div>
                <div className={styles.info}>
-                    <div className={styles.m}>
+                    <div>
                          <div className={styles.title}>{title}</div>
                          <div className={styles.text}>{description}</div>
                     </div>

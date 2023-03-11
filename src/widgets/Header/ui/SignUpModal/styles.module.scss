@@ -1,50 +1,60 @@
-.register{
-    display: flex;
-    align-items: center;
-    gap: 5px;
+.register {
+     display: flex;
+     align-items: center;
+     gap: 5px;
 
-    cursor: pointer;
-    font-family: "OpenSans";
-    font-size: 14px;
-    font-weight: 600;
+     cursor: pointer;
+     font-family: 'OpenSans';
+     font-size: 14px;
+     font-weight: 600;
 }
 
-.registerIcon{
-    font-size: 17px;
+.registerIcon {
+     font-size: 17px;
 }
 
-.title{
-    font-family: "OpenSans";
-    font-size: 22px;
-    font-weight: 600;
+.title {
+     font-family: 'OpenSans';
+     font-size: 22px;
+     font-weight: 600;
 }
 
-.closeBtn{
-    font-size: 20px;
-    font-weight: 100;
-    cursor: pointer;
+.closeBtn {
+     font-size: 20px;
+     font-weight: 100;
+     cursor: pointer;
 }
 
-.closeBtnWrapper{
-    display: flex;
-    justify-content: right;
+.closeBtnWrapper {
+     display: flex;
+     justify-content: right;
 }
 
-.modalBtn{
-    color: #fff;
-    border: 0;
-    background-color: red;
-    padding: 10px 16px;
-    border-radius: 20px;
-    margin-top: 10px;
+.modalBtn {
+     color: #fff;
+     border: 0;
+     background-color: red;
+     padding: 10px 16px;
+     border-radius: 20px;
+     margin-top: 10px;
 
-    font-family: "OpenSans";
-    font-size: 18px;
-    font-weight: 600;
+     font-family: 'OpenSans';
+     font-size: 18px;
+     font-weight: 600;
 }
 
-.modalBtn:hover{
-    cursor: pointer;
-    background-color: rgba(255, 0, 0, 0.719);
-    color: black;
+.modalBtn:hover {
+     cursor: pointer;
+     background-color: rgba(255, 0, 0, 0.719);
+     color: black;
+}
+
+@media (max-width: 480px) {
+     .register {
+          font-size: 24px;
+     }
+
+     .registerIcon {
+          font-size: 25px;
+     }
 }

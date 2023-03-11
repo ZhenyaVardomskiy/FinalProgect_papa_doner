@@ -123,3 +123,139 @@
 .cartIcon {
      font-size: 22px;
 }
+
+.box {
+     display: none;
+}
+
+.logoMobile {
+     display: none;
+}
+
+@media (max-width: 480px) {
+     .upNav {
+          display: none;
+     }
+
+     .downNav {
+          display: none;
+     }
+
+     .wrapper {
+          position: sticky;
+          top: 0;
+          z-index: 10;
+
+          flex-direction: column;
+          padding-left: 20px;
+          width: 100%;
+          align-items: flex-start;
+     }
+
+     .container {
+          display: flex;
+          justify-content: left;
+     }
+
+     .box {
+          height: 70px;
+          display: flex;
+          justify-content: space-between;
+          border-bottom: 1px solid rgb(180, 174, 174);
+     }
+
+     .categoryList {
+          list-style-type: none;
+     }
+
+     .categoryList a{
+          text-decoration: none;
+     }
+
+     .menu {
+          display: flex;
+          align-items: flex-start;
+          font-size: 22px;
+          line-height: 28px;
+          gap: 20px;
+     }
+
+     .mobile_btn {
+          display: none;
+     }
+
+     .mobile_btn {
+          display: block;
+          position: absolute;
+          right: 36px;
+          top: 23px;
+          cursor: pointer;
+          z-index: 10;
+     }
+
+     .menu {
+          display: flex;
+          flex-direction: column;
+          padding-top: 50px;
+          position: fixed;
+          left: -150%;
+          right: 0;
+          top: 5%;
+          bottom: 0;
+          max-width: 93%;
+          height: 80vh;
+          background-color: #ffffff;
+          z-index: 10;
+          transition: left 1s;
+     }
+
+     .active {
+          left: 0;
+     }
+
+     .menu a {
+          font-size: 28px;
+     }
+
+     .logoMobile {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+     }
+
+     .logoMobile a {
+          margin-bottom: 0;
+     }
+
+     .logo {
+          width: 160px;
+          margin-right: 15px;
+     }
+
+     .phone {
+          margin-right: 10px;
+     }
+
+     .phoneIcon {
+          font-size: 18px;
+     }
+
+     .phoneText {
+          font-size: 22px;
+     }
+
+     .cartBtn {
+          gap: 5px;
+          padding: 6px 8px;
+          font-size: 10px;
+     }
+
+     .cartBtn:hover {
+          background-color: rgba(255, 0, 0, 0.719);
+          color: rgb(255, 255, 255);
+     }
+
+     .cartIcon {
+          font-size: 16px;
+     }
+}
