@@ -110,7 +110,7 @@ function Header() {
                                    <HiOutlineShoppingCart
                                         className={styles.cartIcon}
                                    />{' '}
-                                   Корзина: {UserModel.total} руб.
+                                   {UserModel.total} руб.
                               </span>
                          </Link>
                     </div>
